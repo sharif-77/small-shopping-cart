@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section class="w-4/5 mx-auto mt-28">
+      <h1 class="text-4xl font-semibold text-center mb-10 text-green-500">
+        All Product
+      </h1>
+      <!-- grid grid-cols-1 lg:grid-cols-3 -->
+      <section
+        class="cards grid grid-cols-1 lg:grid-cols-4 justify-center gap-5"
+      >
+        <div class="card1 flex justify-center flex-col">
+          <img src="./images/t-shirt.jpg" alt="" />
+          <h1 class="text-2xl font-bold text-green-500">T-shirt</h1>
+          <p class="w-full">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste
+            officiis sit praesentium ducimus repudiandae quod accusantium
+            incidunt explicabo quidem !
+          </p>
+          <h6>Price 50 $</h6>
+          <button
+            id="t-shirt-button"
+            onclick="getAndAdd(this)"
+            type="button"
+            class="mt-7 bg-green-500 hover:bg-green-800 p-5 rounded-lg font-bold text-white uppercase"
+          >
+            Add To Card
+          </button>
+        </div>
+
+        <div class="card2 flex justify-center flex-col">
+          <img src="./images/shirt.jpg " alt="" />
+          <h1 class="text-2xl font-bold text-green-500">Shirt</h1>
+          <p class="w-full">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste
+            officiis sit praesentium ducimus repudiandae quod accusantium
+            incidunt explicabo quidem !
+          </p>
+          <h6>Price 100 $</h6>
+          <button
+            id="shirt-button"
+            onclick="getAndAdd(this)"
+            type="button"
+            class="mt-7 bg-green-500 hover:bg-green-800 p-5 rounded-lg font-bold text-white uppercase"
+          >
+            Add To Card
+          </button>
+        </div>
+
+        <div class="card3 flex flex-col">
+          <img src="./images/pant.jpg " alt="" />
+          <h1 class="text-2xl font-bold text-green-500 mt-6">Pant</h1>
+          <p class="w-full">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste
+            officiis sit praesentium ducimus repudiandae quod accusantium
+            incidunt explicabo quidem !
+          </p>
+          <h6>Price 150 $</h6>
+          <button
+            id="pant-button"
+            onclick="getAndAdd(this)"
+            type="button"
+            class="mt-8 bg-green-500 hover:bg-green-800 p-5 rounded-lg font-bold text-white uppercase"
+          >
+            Add To Card
+          </button>
+        </div>
+
+        <div class="flex flex-col justify-center text-center">
+          <div class="mt-10 bg-green-700 rounded-xl text-white">
+            <ul id="will-add-new" class="text-lg font-semibold">
+
+
+            </ul>
+          </div>
+
+          <div>
+            <h1 class="mt-16 text-2xl font-bold">Code:Hero</h1>
+          <h2 class="text-2xl font-bold text-green-500">Total Prices:<span>00</span></h2>
+          <h3>Discount:</h3>
+          <h4>Grand Totals</h4>
+          </div>
+        
+        </div>
+      </section>
+    </section>
+
+    <script>
+  
+    </script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
